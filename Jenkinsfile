@@ -21,7 +21,7 @@ pipeline {
                                 configName: 'staging',
                                 sshCredentials: [
                                     username: 'apps',
-                                    password: 'apps123'
+                                    encryptedPassphrase: "$USERPASS"
                                 ], 
                                 transfers: [
                                     sshTransfer(
